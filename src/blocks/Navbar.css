@@ -1,0 +1,27 @@
+.navbar {
+  width: 880px;
+  background-color: white;
+}
+
+.navbar__link {
+  color: #a9a9a9;
+}
+
+.navbar__text {
+  color: white;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar_logged {
+    position: absolute;
+    width: 320px;
+    top: 0;
+    height: 0;
+    transition: height 0.5s linear;
+  }
+
+  .navbar_opened {
+    height: 142px;
+  }
+}

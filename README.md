@@ -1,8 +1,12 @@
-Around the U.S. project on React, featuring authorization and registration.
+# Project 10 - Around React
 
-This repository will contain your own front-end project on React with added authorization and registration features.
-Start working with your previously built front end code from Sprint 11.
+This project is about using React to recreate the last project, which was built with vanilla JS.
+it uses hooks to add interactivity to the site.
 
-All authorization, registration and token requests must go through to the server running on [https://register.nomoreparties.co](https://register.nomoreparties.co/).
+## Technologies:
+HTML, CSS, JS, React
 
-Good luck!
+## whats next?
+adding login to the site
+
+link to Github page: https://RokuX9.github.io/around-react
