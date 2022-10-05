@@ -1,12 +1,8 @@
-# Project 10 - Around React
+# Project 14 - Around React-Auth
 
-This project is about using React to recreate the last project, which was built with vanilla JS.
-it uses hooks to add interactivity to the site.
+This a middle-project for connecting the last frontend project (Around-React) with our backend project (Around-Express).
+its main goal is user authentication. it also makes use of React-Router for functional navigation.
 
 ## Technologies:
-HTML, CSS, JS, React
 
-## whats next?
-adding login to the site
-
-link to Github page: https://RokuX9.github.io/around-react
+HTML, CSS, JS, React, React-Router
