@@ -27,7 +27,7 @@ function ImagePopup(props) {
         <Button
           type="button"
           className="overlay__button overlay__button_type_close button"
-          onClick={props.closeAllOverlays}
+          onClick={props.closeAllPopups}
         ></Button>
       </div>
     </div>

@@ -23,7 +23,7 @@ function Card(props) {
   };
 
   return (
-    <div className="locations__card location" key={props.data._id}>
+    <div className="locations__card location">
       <Button
         type="button"
         className={

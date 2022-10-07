@@ -94,36 +94,46 @@ function PopupWithForm(props) {
 
   return (
     <div
-      className={
-        props.isOpen
-          ? "overlay__form overlay__element overlay__element_opened"
-          : "overlay__form overlay__element"
-      }
+      className={props.isOpen ? "overlay overlay_opened" : "overlay"}
+      onClick={props.onClick}
     >
-      <form name="dash-form" ref={formRef} className="form" onSubmit={submit}>
-        <h2 className="form__title">{props.header}</h2>
-        <fieldset className="form__inputs">
-          {props.inputs.map((input, i) => {
-            return (
-              <div className="form__row" key={input.name + "-" + i}>
-                {renderInput(input)}
-              </div>
-            );
-          })}
-        </fieldset>
-        <Button
-          type="submit"
-          disabled={disableButton}
-          className="form__button form__button_type_save button"
+      <div
+        className={
+          props.isOpen
+            ? "overlay__form overlay__element overlay__element_opened"
+            : "overlay__form overlay__element"
+        }
+      >
+        <form
+          name={props.name}
+          ref={formRef}
+          className="form"
+          onSubmit={submit}
         >
-          {props.buttonText}
-        </Button>
-      </form>
-      <Button
-        type="button"
-        className="overlay__button overlay__button_type_close button"
-        onClick={props.closeAllOverlays}
-      ></Button>
+          <h2 className="form__title">{props.header}</h2>
+          <fieldset className="form__inputs">
+            {props.inputs.map((input, i) => {
+              return (
+                <div className="form__row" key={input.name + "-" + i}>
+                  {renderInput(input)}
+                </div>
+              );
+            })}
+          </fieldset>
+          <Button
+            type="submit"
+            disabled={disableButton}
+            className="form__button form__button_type_save button"
+          >
+            {props.buttonText}
+          </Button>
+        </form>
+        <Button
+          type="button"
+          className="overlay__button overlay__button_type_close button"
+          onClick={props.closeAllPopups}
+        ></Button>
+      </div>
     </div>
   );
 }
