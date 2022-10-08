@@ -16,14 +16,6 @@ function DeletePlacePopup(props) {
 		<PopupWithForm
 			name="deleteLocation"
 			header="Are you sure?"
-			inputs={[
-				{
-					type: "hidden",
-					name: "id",
-					id: "location-id",
-					value: props.formState.id,
-				},
-			]}
 			buttonText="Yes"
 			isOpen={props.isOpen}
 			formState={props.formState}

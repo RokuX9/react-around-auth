@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import "../blocks/Form.css";
-import Input from "./Input";
 
 function PopupWithForm({ children, ...props }) {
 	const [disableButton, setDisableButton] = React.useState(true);
@@ -51,7 +50,6 @@ function PopupWithForm({ children, ...props }) {
 					<h2 className="form__title">{props.header}</h2>
 					<fieldset className="form__inputs">
 						{React.Children.map(children, (child, i) => {
-							console.log(child);
 							return (
 								<div
 									className="form__row"

@@ -18,24 +18,6 @@ function AddPlacePopup(props) {
 		<PopupWithForm
 			name="addLocation"
 			header="New Place"
-			inputs={[
-				{
-					type: "text",
-					placeHolder: "Location Name",
-					name: "name",
-					minLength: 1,
-					maxLength: 30,
-					id: "location-name",
-					value: props.formState.name,
-				},
-				{
-					type: "url",
-					placeHolder: "Location image URL",
-					name: "link",
-					id: "location-url",
-					value: props.formState.url,
-				},
-			]}
 			buttonText="Save"
 			isOpen={props.isOpen}
 			formState={props.formState}
