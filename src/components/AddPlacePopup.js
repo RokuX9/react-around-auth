@@ -42,7 +42,7 @@ function AddPlacePopup(props) {
 				required
 			/>
 			<Input
-				type="text"
+				type="url"
 				isOpen={props.isOpen}
 				placeholder="Location image URL"
 				name="link"
